@@ -1,0 +1,32 @@
+#container {
+    width: 100%;
+    height: auto;
+}
+
+#main_content {
+    width: 100%;
+    height: auto;
+}
+
+#main_content .promo_detail {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.promo_detail .promo_detail_title {
+    width: 100%;
+    color: #c5a46b;
+    font-size: 2em;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.promo_detail .promo_detail_content {
+    width: 100%;
+    text-align: justify;
+}
+
+.promo_detail_content p {
+    padding: 10px 0px;
+}

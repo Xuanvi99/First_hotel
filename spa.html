@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base_scroll_box.css">
+    <link rel="stylesheet" href="./css/base_hder_fter.css">
+    <link rel="stylesheet" href="./css/base_menu_baner.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>KHÁCH SẠN</title>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="KitlVRfR"></script>
+    <header id="header">
+        <ul class="header_nav">
+            <li>
+                <i class="fas fa-phone-alt fas-lag" style="color:#C5A46D;margin-right:10px;"></i>0123456789
+            </li>
+            <span class="cach"></span>
+            <li>
+                <i class="far fa-envelope" style="color:#C5A46D;margin-right:10px;"></i>info@webhotel.vn
+            </li>
+        </ul>
+    </header>
+    <div id="container">
+        <div id="containe_baner">
+            <div class="baner_menu absolute">
+                <div class="menu">
+                    <div class="menu_logo">
+                        <a href="index.html"><img src="./img/logo1.png"></a>
+                    </div>
+                    <div class="menu_menu">
+                        <div class="icon_bar_close">
+                            <i class="fas fa-bars fa-2x" onclick="menu_rp(1)"></i>
+                            <i class="fas fa-times fa-2x" onclick="menu_rp(2)" style="display: none;"></i>
+                        </div>
+                        <ul class="menu_menu-nav">
+                            <li>
+                                <a href="index.html">TRANG CHỦ</a>
+                            </li>
+                            <li>
+                                <a href="introduce.html">GIỚI THIỆU</a>
+                            </li>
+                            <li>
+                                <a href="classroom.html">PHÒNG</a>
+                            </li>
+                            <li>
+                                <a href="restaurant.html">NHÀ HÀNG</a>
+                            </li>
+                            <li>
+                                <a href="spa.html">SPA</a>
+                            </li>
+                            <li>
+                                <a href="tours.html">TOURS</a>
+                            </li>
+                            <li>
+                                <a href="promo.html">KHUYỄN MẠI</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                        <div class="menu_menu-btn">
+                            <button onclick="toast_dp()">Đặt ngay</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="baner_img">
+                <h1>SPA</h1>
+                <ul class="baner_page">
+                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li class="active">Spa</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main_content">
+            <div class="food_boxs" style="margin: 50px 0px;">
+                <div class="food_boxs-iterm">
+                    <div class="iterm_img">
+                        <img src="./img/spa/MassageTherapyFAQs-FloridaAcademy.jpg" alt="">
+                    </div>
+                    <div class="iterm_detail">
+                        <h2>MASSAGE TRỊ LIỆU</h2>
+                        <div class="iterm_detail-title">
+                            Liệu pháp này có tác dụng trị liệu là đả thông toàn bộ kinh mạch và các dây chằng, cơ, gân.
+                        </div>
+                        <center><a href="" class="iterm_detail-btn">Chi tiết</a></center>
+                    </div>
+                </div>
+                <div class="food_boxs-iterm right">
+                    <div class="iterm_img">
+                        <img src="./img/spa/cham-soc-da-sau-lan-kim-1.jpg" alt="">
+                    </div>
+                    <div class="iterm_detail">
+                        <h2>CHĂM SÓC DA MẶT</h2>
+                        <div class="iterm_detail-title">
+                            Dưỡng ẩm cho làn da bị lão hóa và mất nước với sữa ong chúa, mật ong và yến mạch.
+                        </div>
+                        <center><a href="" class="iterm_detail-btn">Chi tiết</a></center>
+                    </div>
+                </div>
+                <div class="food_boxs-iterm">
+                    <div class="iterm_img">
+                        <img src="./img/spa/mong-tay-dep-.jpg" alt="">
+                    </div>
+                    <div class="iterm_detail">
+                        <h2>CHĂM SÓC MÓNG TAY</h2>
+                        <div class="iterm_detail-title">
+                            <p>Mani hoặc Pedi: 180.000 VND</p>
+                            <p>Combo Mani & Pedi: 350.000 VND</p>
+                        </div>
+                        <center><a href="" class="iterm_detail-btn">Chi tiết</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_container">
+            <div class="widget1">
+                <div class="widget_title">
+                    <h2>FIRST HOTEL</h2>
+                </div>
+                <div class="widget_content">
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color:#C5A46D;margin-right:10px;"></i>Kim Sơn, Gia Lâm, Hà Nội</li>
+                        <li><i class="fas fa-phone-alt fas-lag" style="color:#C5A46D;margin-right:10px;"></i>012 345 6789
+                        </li>
+                        <span class="cach"></span>
+                        <li>
+                            <i class="far fa-envelope" style="color:#C5A46D;margin-right:10px;"></i>info@webhotel.vn
+                        </li>
+                        <li>Hotline: 012 345 6789</li>
+                    </ul>
+                    <ul class="list_icon">
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-skype"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-youtube-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="widget2">
+                <div class="widget2_infor">
+                    <div class="widget2_title">
+                        <h2>THÔNG ĐIỆP</h2>
+                    </div>
+                    <div class="widget2_content" style="box-sizing: border-box;">
+                        <p>Đến với khách sạn First Hotel tại biển Hải Hòa bạn chỉ phải chi phí mức thấp nhất mà lại được phục vụ ở mức cao nhất. Chúng tôi trân trọng sự quan tâm và phản hồi nếu quý khách không hài lòng.
+                            Bởi thông điệp của chúng tôi là "Phục vụ khách ngày hôm nay tốt hơn ngày hôm qua và ngày mai sẽ tốt hơn ngày hôm nay"</p>
+                    </div>
+                </div>
+                <div class="widget2_fb">
+                    <div class="widget2_title">
+                        <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+                    </div>
+                    <div class="widget2_content" style="border-right: none;">
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft_footer">
+            Copyright © FIRST HOTEL. All Rights Reserved
+        </div>
+    </div>
+    <div class="scrolltop" onclick="topFunction()">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+    <div class="phone">
+        <i class="fas fa-phone-volume" style="transform: rotate(-40deg);"></i><a class="a-hot" href="tel: 0242 242 0777" title="Gọi 0242 242 0777"> 0242 242 0777</a>
+    </div>
+    <div class="overlay_form" onclick="myFunction(event)">
+        <form class="form_dp">
+            <h3>Đặt phòng</h3>
+            <ul>
+                <li>
+                    <p>Họ tên</p><input type="text" placeholder="Họ tên">
+                </li>
+                <li>
+                    <p>Số điện thoại</p><input type="number" placeholder="Số điện thoại">
+                </li>
+                <li>
+                    <p>Tên phòng và số lượng muốn đặt</p>
+                    <textarea name="" id="" placeholder="Tên phòng và số lượng muốn đặt"></textarea>
+                </li>
+            </ul>
+            <center><button type="submit" class="btn">Gửi</button></center>
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js "></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('.baner_menu').removeClass('absolute');
+                $('.baner_menu').addClass('sticky');
+            } else {
+                $('.baner_menu').removeClass('sticky');
+                $('.baner_menu').addClass('absolute');
+            }
+        });
+    });
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var dem = 0;
+            $('.food_boxs-iterm').each(function() {
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight() / 2;
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if (bottom_of_window > bottom_of_object) {
+                    if (dem === 0) {
+                        $(this).css('animation', 'slow_food_left 1s ease-in-out forwards');
+                        dem++;
+                    } else if (dem == 1) {
+                        $(this).css('animation', 'slow_food_right 1s ease-in-out forwards');
+                        dem = 0;
+                    }
+
+                }
+
+            });
+        });
+    });
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        var a = document.getElementsByClassName('food_boxs-iterm');
+        console.log(a);
+    }
+</script>
+<script src="./js/menu_rp.js"></script>
+
+</html>

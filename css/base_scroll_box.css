@@ -1,0 +1,125 @@
+#main_content .food_boxs {
+    width: 100%;
+    height: auto;
+}
+
+.food_boxs .food_boxs-iterm {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid #C5A46D;
+    margin-bottom: 50px;
+    opacity: 0;
+    vertical-align: middle;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+@keyframes slow_food_left {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slow_food_right {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.food_boxs-iterm .iterm_img {
+    --height_img: 400px;
+    width: 60%;
+    max-height: var(--height_img);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.iterm_img img {
+    width: 100%;
+    height: var(--height_img);
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.food_boxs-iterm:hover .iterm_img img {
+    transform: scale(1.1);
+}
+
+.food_boxs-iterm:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.food_boxs-iterm .iterm_detail {
+    width: 40%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.iterm_detail h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #C5A46D;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.iterm_detail .iterm_detail-title {
+    text-align: justify;
+    font-size: 1em;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+.iterm_detail .iterm_detail-btn {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 20px;
+    background: #C5A46D;
+    color: white;
+    white-space: nowrap;
+    font-family: 'Lobster', cursive;
+}
+
+@media only screen and (max-width:1024px) {
+    .food_boxs .food_boxs-iterm {
+        flex-direction: column;
+        width: 95%;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
+    }
+    .food_boxs-iterm .iterm_img {
+        width: 100%;
+    }
+    .food_boxs-iterm .iterm_detail {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .food_boxs-iterm .iterm_img {
+        --height_img: 200px;
+    }
+    .food_boxs-iterm .iterm_detail {
+        padding: 10px;
+    }
+    .iterm_detail .iterm_detail-title {
+        padding: 10px 0px;
+    }
+}

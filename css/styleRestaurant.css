@@ -1,0 +1,206 @@
+#container {
+    width: 100%;
+    height: auto;
+}
+
+#main_content {
+    width: 100%;
+    height: auto;
+}
+
+#main_content .heading_box {
+    margin: 80px 0px;
+    text-align: center;
+}
+
+.heading_box h2 {
+    color: #C5A46D;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    display: table;
+    margin: auto;
+    padding: 20px 0px;
+    padding: 0px 20px 20px;
+    border-bottom: 1px solid #C5A46D;
+    position: relative;
+}
+
+.heading_box h2::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    margin-left: -8px;
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 0 1px #c5a46d, inset 0 0 0 2px #c5a46d;
+    z-index: 1;
+}
+
+.heading_box h2::after {
+    content: '';
+    height: 2px;
+    width: 92%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, -100%, 0);
+    background: #c5a46d;
+}
+
+@media only screen and (max-width:500px) {
+    #main_content .heading_box {
+        margin: 50px 0px;
+        text-align: center;
+    }
+    .heading_box h2 {
+        font-size: 2em;
+    }
+}
+
+#main_content .desc {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.desc .desc_img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.desc_img img {
+    width: 100%;
+}
+
+.desc .desc_title {
+    padding: 20px 0px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: Light 300;
+}
+
+@media only screen and (max-width:500px) {
+    #main_content .desc {
+        width: 95%;
+    }
+}
+
+#main_content .great-taste {
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/resstaurant/great-taste.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#main_content .great-taste::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.great-taste h2 {
+    padding: 200px 0px 0px 0px;
+    color: white;
+    font-size: 60px;
+}
+
+.great-taste h3 {
+    color: #C5A46D;
+    font-size: 48px;
+    font-family: 'Lobster', cursive;
+}
+
+
+/*menu nha hang*/
+
+#main_content .menu_boxs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    --column-space: 20px;
+    --row-space: 50px;
+    --columns: 3;
+    margin: 70px auto;
+}
+
+.menu_boxs .menu_boxs-iterm {
+    width: calc((100%/var(--columns)) - calc(2 * var(--column-space)));
+    height: auto;
+    margin-left: var(--column-space);
+    margin-right: var(--column-space);
+    margin-bottom: var(--row-space);
+    box-sizing: border-box;
+    border: 2px solid white;
+    box-shadow: 0 0 0 3px #C5A46D, inset 0 0 0 1px #C5A46D;
+}
+
+.menu_boxs-iterm .iterm_price {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+.menu_boxs-iterm .iterm_food li {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid silver;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.menu_boxs .menu_boxs-iterm:hover {
+    box-shadow: 0 0 0 3px #070707, inset 0 0 0 1px #C5A46D;
+}
+
+@media only screen and (max-width:768px) {
+    #main_content .great-taste {
+        height: 400px;
+    }
+    .great-taste h2 {
+        padding: 150px 0px 0px 0px;
+        color: white;
+        font-size: 40px;
+    }
+    .great-taste h3 {
+        color: #C5A46D;
+        font-size: 28px;
+        font-family: 'Lobster', cursive;
+    }
+    #main_content .menu_boxs {
+        --columns: 1;
+        --column-space: 50px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #main_content .great-taste {
+        height: 250px;
+    }
+    .great-taste h2 {
+        padding: 70px 0px 0px 0px;
+        color: white;
+        font-size: 25px;
+    }
+    .great-taste h3 {
+        color: #C5A46D;
+        font-size: 16px;
+        font-family: 'Lobster', cursive;
+    }
+}
