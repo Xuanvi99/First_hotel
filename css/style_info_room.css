@@ -559,12 +559,11 @@
     box-sizing: border-box;
 }
 
-.room_box-details a {
+.room_box-details {
     text-decoration: none;
     color: #C5A46D;
     letter-spacing: -1px;
     font-size: 25px;
-    font-weight: bold;
 }
 
 .room_box-details .title {
@@ -572,7 +571,8 @@
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
-    padding: 20px 0px;
+    color: black;
+    padding: 20px 40px;
 }
 
 .room_box-details .price {
