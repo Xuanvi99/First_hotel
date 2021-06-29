@@ -475,25 +475,25 @@
             }
             let array = ["*", "phong", "amthuc", "sanh"];
             a[n].classList.add('ckeck');
-            var b = document.getElementsByClassName("img_box-iterm");
-            for (let i = 0; i < b.length; i++) {
-                b[i].classList.remove('img_out');
-            }
-            for (let i = 0; i < b.length; i++) {
-                if (array[n] != "*") {
-                    if (b[i].attributes[1].nodeValue == array[n]) {
-                        b[i].classList.remove('img_out');
-                        b[i].classList.add('img_in');
 
+            if (array[n] != "*") {
+                for (var i = 1; i < array.length; i++) {
+                    if (i === n) {
+                        $(".img_box-iterm[data-img=" + array[i] + "]").css({
+                            display: "block",
+                            animation: "img_on 0.5s ease-in-out forwards"
+                        })
                     } else {
-                        b[i].classList.remove('img_in');
-                        b[i].classList.add('img_out');
+                        $(".img_box-iterm[data-img=" + array[i] + "]").hide(5);
                     }
-                } else {
-                    b[i].classList.remove('img_out');
-                    b[i].classList.add('img_in');
                 }
+            } else {
+                $(".img_box-iterm").css({
+                    display: "block",
+                    animation: "img_on 0.5s linear forwards"
+                })
             }
+
             const kt = document.getElementsByClassName('header_gallery')
             if (kt) {
                 var select_list = document.getElementsByClassName('select_list')[0];
