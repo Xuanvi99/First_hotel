@@ -1,588 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/base_hder_fter.css">
-    <link rel="stylesheet" href="./css/styletrangchu.css">
-    <link rel="stylesheet" href="./css/styleslide.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base_hder_fter.css" />
+    <link rel="stylesheet" href="./css/styletrangchu.css" />
+    <link rel="stylesheet" href="./css/styleslide.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>KHÁCH SẠN</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="KitlVRfR"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0"
+      nonce="KitlVRfR"
+    ></script>
     <header id="header">
-        <ul class="header_nav">
-            <li>
-                <i class="fas fa-phone-alt fas-lag" style="color:#C5A46D;margin-right:10px;"></i>0123456789
-            </li>
-            <span class="cach"></span>
-            <li>
-                <i class="far fa-envelope" style="color:#C5A46D;margin-right:10px;"></i>info@webhotel.vn
-            </li>
-        </ul>
+      <ul class="header_nav">
+        <li>
+          <i
+            class="fas fa-phone-alt fas-lag"
+            style="color: #c5a46d; margin-right: 10px"
+          ></i
+          >0123456789
+        </li>
+        <span class="cach"></span>
+        <li>
+          <i
+            class="far fa-envelope"
+            style="color: #c5a46d; margin-right: 10px"
+          ></i
+          >info@webhotel.vn
+        </li>
+      </ul>
     </header>
     <div id="container">
-        <div id="containe_baner">
-            <div class="baner_menu absolute">
-                <div class="menu">
-                    <div class="menu_logo">
-                        <a href="index.html"><img src="./img/logo1.png"></a>
-                    </div>
-                    <div class="menu_menu">
-                        <div class="icon_bar_close">
-                            <i class="fas fa-bars fa-2x" onclick="menu_rp(1)"></i>
-                            <i class="fas fa-times fa-2x" onclick="menu_rp(2)" style="display: none;"></i>
-                        </div>
-                        <ul class="menu_menu-nav">
-                            <li>
-                                <a href="index.html">TRANG CHỦ</a>
-                            </li>
-                            <li>
-                                <a href="introduce.html">GIỚI THIỆU</a>
-                            </li>
-                            <li>
-                                <a href="classroom.html">PHÒNG</a>
-                            </li>
-                            <li>
-                                <a href="restaurant.html">NHÀ HÀNG</a>
-                            </li>
-                            <li>
-                                <a href="spa.html">SPA</a>
-                            </li>
-                            <li>
-                                <a href="tours.html">TOURS</a>
-                            </li>
-                            <li>
-                                <a href="promo.html">KHUYỄN MẠI</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">LIÊN HỆ</a>
-                            </li>
-                        </ul>
-                        <div class="menu_menu-btn">
-                            <button onclick="toast_dp()">Đặt ngay</button>
-                        </div>
-                    </div>
-                </div>
+      <div id="containe_baner">
+        <div class="baner_menu absolute">
+          <div class="menu">
+            <div class="menu_logo">
+              <a href="index.html"><img src="./img/logo1.png" /></a>
             </div>
-            <div class="baner_slideshow">
-                <div class="mySlides active_img">
-                    <img src="./img/baner/bn1.jpg">
-                </div>
-                <div class="mySlides ">
-                    <img src="./img/baner/bn2.jpg">
-                </div>
-                <div class="mySlides ">
-                    <img src="./img/baner/bn3.jpg ">
-                </div>
-                <div class="mySlides_btn " style="text-align:center ">
-                    <span class="dot " onclick="currentSlide(1) "></span>
-                    <span class="dot " onclick="currentSlide(2) "></span>
-                    <span class="dot " onclick="currentSlide(3) "></span>
-                </div>
+            <div class="menu_menu">
+              <div class="icon_bar_close">
+                <i class="fas fa-bars fa-2x" onclick="menu_rp(1)"></i>
+                <i
+                  class="fas fa-times fa-2x"
+                  onclick="menu_rp(2)"
+                  style="display: none"
+                ></i>
+              </div>
+              <ul class="menu_menu-nav">
+                <li>
+                  <a href="index.html">TRANG CHỦ</a>
+                </li>
+                <li>
+                  <a href="introduce.html">GIỚI THIỆU</a>
+                </li>
+                <li>
+                  <a href="classroom.html">PHÒNG</a>
+                </li>
+                <li>
+                  <a href="restaurant.html">NHÀ HÀNG</a>
+                </li>
+                <li>
+                  <a href="spa.html">SPA</a>
+                </li>
+                <li>
+                  <a href="tours.html">TOURS</a>
+                </li>
+                <li>
+                  <a href="promo.html">KHUYỄN MẠI</a>
+                </li>
+                <li>
+                  <a href="contact.html">LIÊN HỆ</a>
+                </li>
+              </ul>
+              <div class="menu_menu-btn">
+                <button onclick="toast_dp()">Đặt ngay</button>
+              </div>
             </div>
-            <div class="baner_title">
-                <h2>Kính Chào Quý Khách Đến Với First Hotel</h2>
-                <div style="text-align: justify;line-height: 22px;">
-                    <p>
-                        Đến với First Hotel, bạn không chỉ được hòa mình vào một cuộc sống vương giả với đầy đủ tiện nghi, dịch vụ chuyên nghiệp, chất lượng hàng đầu mà còn cảm nhận được bầu không khí ấm cúng, thoải mái và dễ chịu. chịu, quen thuộc như ngay trong gia đình mình.
-                        First Hotel giống như một điểm dừng chân an toàn, thân thiện cho mọi người khi ở Hà Nội. Tọa lạc tại vị trí đắc địa, thiên thời - địa lợi - nhân hòa, du khách có thể dễ dàng di chuyển đến các địa điểm nổi tiếng của khu du lịch
-                        mà không mất nhiều thời gian.
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
-        <div id="container_content">
-            <div class="heading_box">
-                <h2>Luxury Rooms</h2>
-                <div class="subtitle">Best rooms with Best services</div>
-            </div>
-            <div class="room_container">
-                <div class="room_boxes">
-                    <div class="room_boxes-img">
-                        <img src="./img/room/PX_03500.jpg" alt="">
-                        <div class="img_overlay"></div>
-                        <div class="price">VNĐ 800.000</div>
-                    </div>
-                    <div class="room_boxes-title">
-                        <h2>PHÒNG DELUXE TWIN</h2>
-                        <p>Truyền hình cáp quang, wiffi Free băng thông rộng, tivi 40 in, điều hòa mát, nóng lạnh, máy sấy tóc, dao cạo, nước uống miễn phí, bàn ghế uống nước, giường ngủ: 2 giường 1m6, ...</p>
-                        <div class="price_money">Giá: VNĐ 800.000</div>
-                        <center><a href="info_room.html?room_deluxe1">Chi tiết</a></center>
-                    </div>
-                </div>
-                <div class="room_boxes right">
-                    <div class="room_boxes-img">
-                        <img src="./img/room/deluxe2.jpg" alt="">
-                        <div class="img_overlay"></div>
-                        <div class="price">VNĐ 1.050.000</div>
-                    </div>
-                    <div class="room_boxes-title">
-                        <h2>PHÒNG DELUXE DOUBLE</h2>
-                        <p>Cửa sổ view biển, truyền hình cáp quang, wiffi Free băng thông rộng, tivi 40 in, điều hòa mát, nóng lạnh, máy sấy tóc, dao cạo, nước uống miễn phí, bàn ghế uống nước, giường ngủ: 2 giường 1m6, ....
-                        </p>
-                        <div class="price_money">Giá: VNĐ 1.050.000</div>
-                        <center><a href="info_room.html?room_deluxe2">Chi tiết</a></center>
-                    </div>
-                </div>
-                <div class="room_boxes">
-                    <div class="room_boxes-img">
-                        <img src="./img/room/suite.jpg" alt="">
-                        <div class="img_overlay"></div>
-                        <div class="price">VNĐ 1.250.000</div>
-                    </div>
-                    <div class="room_boxes-title">
-                        <h2>PHÒNG SUITE BALCONY</h2>
-                        <p>Cửa sổ view biển, truyền hình cáp quang, wiffi Free băng thông rộng, tivi 40 in, bộ Salon, trà cà phê, hoa quả, điều hòa mát, nóng lạnh,vách tắm đứng, máy sấy tóc, ...</p>
-                        <div class="price_money">Giá: VNĐ 1.250.000</div>
-                        <center><a href="info_room.html?room_suite">Chi tiết</a></center>
-                    </div>
-                </div>
-                <div class="room_boxes right">
-                    <div class="room_boxes-img">
-                        <img src="./img/room/giadinh.jpg" alt="">
-                        <div class="img_overlay"></div>
-                        <div class="price">VNĐ 1.500.000</div>
-                    </div>
-                    <div class="room_boxes-title">
-                        <h2>PHÒNG GIA ĐÌNH</h2>
-                        <p>Cửa sổ view biển, truyền hình cáp quang, wiffi Free băng thông rộng, tivi 40 in, bộ Salon, trà cà phê, hoa quả, điều hòa mát, nóng lạnh,vách tắm đứng, máy sấy tóc, ...</p>
-                        <div class="price_money">Giá: VNĐ 1.500.000</div>
-                        <center><a href="info_room.html?room_giadinh">Chi tiết</a></center>
-                    </div>
-                </div>
-            </div>
+        <div class="baner_slideshow">
+          <div class="mySlides active_img">
+            <img src="./img/baner/bn1.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="./img/baner/bn2.jpg" />
+          </div>
+          <div class="mySlides">
+            <img src="./img/baner/bn3.jpg " />
+          </div>
+          <div class="mySlides_btn" style="text-align: center">
+            <span class="dot active" onclick="currentSlide(1) "></span>
+            <span class="dot" onclick="currentSlide(2) "></span>
+            <span class="dot" onclick="currentSlide(3) "></span>
+          </div>
         </div>
-        <div id="gallery">
-            <div class="heading_box">
-                <h2>Our Gallery</h2>
-            </div>
+        <div class="baner_title">
+          <h2>Kính Chào Quý Khách Đến Với First Hotel</h2>
+          <div style="text-align: justify; line-height: 22px">
+            <p>
+              Đến với First Hotel, bạn không chỉ được hòa mình vào một cuộc sống
+              vương giả với đầy đủ tiện nghi, dịch vụ chuyên nghiệp, chất lượng
+              hàng đầu mà còn cảm nhận được bầu không khí ấm cúng, thoải mái và
+              dễ chịu. chịu, quen thuộc như ngay trong gia đình mình. First
+              Hotel giống như một điểm dừng chân an toàn, thân thiện cho mọi
+              người khi ở Hà Nội. Tọa lạc tại vị trí đắc địa, thiên thời - địa
+              lợi - nhân hòa, du khách có thể dễ dàng di chuyển đến các địa điểm
+              nổi tiếng của khu du lịch mà không mất nhiều thời gian.
+            </p>
+          </div>
         </div>
-        <div id="gallery_container">
-            <div class="gallery_container-select">
-                <div class="header_gallery" onclick="menu_gallery()">
-                    Lựa chọn
-                </div>
-                <ul class="select_list select_list_out">
-                    <li class="a ckeck" onclick="select_galley(0)">
-                        All
-                    </li>
-                    <li class="a" onclick="select_galley(1)">
-                        Ảnh phòng
-                    </li>
-                    <li class="a" onclick="select_galley(2)">
-                        Ẩm thực
-                    </li>
-                    <li class="a" onclick="select_galley(3)">
-                        Sảnh
-                    </li>
+      </div>
+      <div id="container_content">
+        <div class="heading_box">
+          <h2>Luxury Rooms</h2>
+          <div class="subtitle">Best rooms with Best services</div>
+        </div>
+        <div class="room_container">
+          <div class="room_boxes">
+            <div class="room_boxes-img">
+              <img src="./img/room/PX_03500.jpg" alt="" />
+              <div class="img_overlay"></div>
+              <div class="price">VNĐ 800.000</div>
+            </div>
+            <div class="room_boxes-title">
+              <h2>PHÒNG DELUXE TWIN</h2>
+              <p>
+                Truyền hình cáp quang, wiffi Free băng thông rộng, tivi 40 in,
+                điều hòa mát, nóng lạnh, máy sấy tóc, dao cạo, nước uống miễn
+                phí, bàn ghế uống nước, giường ngủ: 2 giường 1m6, ...
+              </p>
+              <div class="price_money">Giá: VNĐ 800.000</div>
+              <center>
+                <a href="info_room.html?room_deluxe1">Chi tiết</a>
+              </center>
+            </div>
+          </div>
+          <div class="room_boxes right">
+            <div class="room_boxes-img">
+              <img src="./img/room/deluxe2.jpg" alt="" />
+              <div class="img_overlay"></div>
+              <div class="price">VNĐ 1.050.000</div>
+            </div>
+            <div class="room_boxes-title">
+              <h2>PHÒNG DELUXE DOUBLE</h2>
+              <p>
+                Cửa sổ view biển, truyền hình cáp quang, wiffi Free băng thông
+                rộng, tivi 40 in, điều hòa mát, nóng lạnh, máy sấy tóc, dao cạo,
+                nước uống miễn phí, bàn ghế uống nước, giường ngủ: 2 giường 1m6,
+                ....
+              </p>
+              <div class="price_money">Giá: VNĐ 1.050.000</div>
+              <center>
+                <a href="info_room.html?room_deluxe2">Chi tiết</a>
+              </center>
+            </div>
+          </div>
+          <div class="room_boxes">
+            <div class="room_boxes-img">
+              <img src="./img/room/suite.jpg" alt="" />
+              <div class="img_overlay"></div>
+              <div class="price">VNĐ 1.250.000</div>
+            </div>
+            <div class="room_boxes-title">
+              <h2>PHÒNG SUITE BALCONY</h2>
+              <p>
+                Cửa sổ view biển, truyền hình cáp quang, wiffi Free băng thông
+                rộng, tivi 40 in, bộ Salon, trà cà phê, hoa quả, điều hòa mát,
+                nóng lạnh,vách tắm đứng, máy sấy tóc, ...
+              </p>
+              <div class="price_money">Giá: VNĐ 1.250.000</div>
+              <center><a href="info_room.html?room_suite">Chi tiết</a></center>
+            </div>
+          </div>
+          <div class="room_boxes right">
+            <div class="room_boxes-img">
+              <img src="./img/room/giadinh.jpg" alt="" />
+              <div class="img_overlay"></div>
+              <div class="price">VNĐ 1.500.000</div>
+            </div>
+            <div class="room_boxes-title">
+              <h2>PHÒNG GIA ĐÌNH</h2>
+              <p>
+                Cửa sổ view biển, truyền hình cáp quang, wiffi Free băng thông
+                rộng, tivi 40 in, bộ Salon, trà cà phê, hoa quả, điều hòa mát,
+                nóng lạnh,vách tắm đứng, máy sấy tóc, ...
+              </p>
+              <div class="price_money">Giá: VNĐ 1.500.000</div>
+              <center>
+                <a href="info_room.html?room_giadinh">Chi tiết</a>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gallery">
+        <div class="heading_box">
+          <h2>Our Gallery</h2>
+        </div>
+      </div>
+      <div id="gallery_container">
+        <div class="gallery_container-select">
+          <div class="header_gallery" onclick="menu_gallery()">Lựa chọn</div>
+          <ul class="select_list select_list_out">
+            <li class="a ckeck" onclick="select_galley(0)">All</li>
+            <li class="a" onclick="select_galley(1)">Ảnh phòng</li>
+            <li class="a" onclick="select_galley(2)">Ẩm thực</li>
+            <li class="a" onclick="select_galley(3)">Sảnh</li>
+          </ul>
+        </div>
+        <ul class="main_img-box">
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(0)">
+            <figure>
+              <img src="./img/gallery/anh1.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(1)">
+            <figure>
+              <img src="./img/gallery/anh2.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(2)">
+            <figure>
+              <img src="./img/gallery/anh3.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(3)">
+            <figure>
+              <img src="./img/gallery/anh4.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(4)">
+            <figure>
+              <img src="./img/gallery/anh5.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(5)">
+            <figure>
+              <img src="./img/gallery/anh6.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(6)">
+            <figure>
+              <img src="./img/gallery/anh7.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(7)">
+            <figure>
+              <img src="./img/gallery/anh8.jpg" alt="" class="iterm_img" />
 
-                </ul>
-            </div>
-            <ul class="main_img-box">
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(0)">
-                    <figure>
-                        <img src="./img/gallery/anh1.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(1)">
-                    <figure>
-                        <img src="./img/gallery/anh2.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(2)">
-                    <figure>
-                        <img src="./img/gallery/anh3.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(3)">
-                    <figure>
-                        <img src="./img/gallery/anh4.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(4)">
-                    <figure>
-                        <img src="./img/gallery/anh5.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(5)">
-                    <figure>
-                        <img src="./img/gallery/anh6.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(6)">
-                    <figure>
-                        <img src="./img/gallery/anh7.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(7)">
-                    <figure>
-                        <img src="./img/gallery/anh8.jpg" alt="" class="iterm_img">
-
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(8)">
-                    <figure>
-                        <img src="./img/gallery/anh9.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(9)">
-                    <figure>
-                        <img src="./img/gallery/anh10.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(10)">
-                    <figure>
-                        <img src="./img/gallery/anh11.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="phong" onclick="img_views(11)">
-                    <figure>
-                        <img src="./img/gallery/anh12.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ảnh phòng</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="amthuc" onclick="img_views(12)">
-                    <figure>
-                        <img src="./img/gallery/anh13.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ẩm thực</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="amthuc" onclick="img_views(13)">
-                    <figure>
-                        <img src="./img/gallery/anh14.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ẩm thực</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="amthuc" onclick="img_views(14)">
-                    <figure>
-                        <img src="./img/gallery/anh15.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ẩm thực</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="amthuc" onclick="img_views(15)">
-                    <figure>
-                        <img src="./img/gallery/anh16.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ẩm thực</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="amthuc" onclick="img_views(16)">
-                    <figure>
-                        <img src="./img/gallery/anh17.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ẩm thực</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="amthuc" onclick="img_views(17)">
-                    <figure>
-                        <img src="./img/gallery/anh18.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Ẩm thực</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="sanh" onclick="img_views(18)">
-                    <figure>
-                        <img src="./img/gallery/anh19.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Sảnh</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="img_box-iterm" data-img="sanh" onclick="img_views(19)">
-                    <figure>
-                        <img src="./img/gallery/anh20.jpg" alt="" class="iterm_img">
-                        <figcaption>
-                            <h4>Sảnh</h4>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </div>
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(8)">
+            <figure>
+              <img src="./img/gallery/anh9.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(9)">
+            <figure>
+              <img src="./img/gallery/anh10.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(10)">
+            <figure>
+              <img src="./img/gallery/anh11.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="phong" onclick="img_views(11)">
+            <figure>
+              <img src="./img/gallery/anh12.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ảnh phòng</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="amthuc" onclick="img_views(12)">
+            <figure>
+              <img src="./img/gallery/anh13.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ẩm thực</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="amthuc" onclick="img_views(13)">
+            <figure>
+              <img src="./img/gallery/anh14.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ẩm thực</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="amthuc" onclick="img_views(14)">
+            <figure>
+              <img src="./img/gallery/anh15.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ẩm thực</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="amthuc" onclick="img_views(15)">
+            <figure>
+              <img src="./img/gallery/anh16.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ẩm thực</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="amthuc" onclick="img_views(16)">
+            <figure>
+              <img src="./img/gallery/anh17.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ẩm thực</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="amthuc" onclick="img_views(17)">
+            <figure>
+              <img src="./img/gallery/anh18.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Ẩm thực</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="sanh" onclick="img_views(18)">
+            <figure>
+              <img src="./img/gallery/anh19.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Sảnh</h4>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="img_box-iterm" data-img="sanh" onclick="img_views(19)">
+            <figure>
+              <img src="./img/gallery/anh20.jpg" alt="" class="iterm_img" />
+              <figcaption>
+                <h4>Sảnh</h4>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
     </div>
     <div id="footer">
-        <div class="footer_container">
-            <div class="widget1">
-                <div class="widget_title">
-                    <h2>FIRST HOTEL</h2>
-                </div>
-                <div class="widget_content">
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt" style="color:#C5A46D;margin-right:10px;"></i>Kim Sơn, Gia Lâm, Hà Nội</li>
-                        <li><i class="fas fa-phone-alt fas-lag" style="color:#C5A46D;margin-right:10px;"></i>012 345 6789
-                        </li>
-                        <span class="cach"></span>
-                        <li>
-                            <i class="far fa-envelope" style="color:#C5A46D;margin-right:10px;"></i>info@webhotel.vn
-                        </li>
-                        <li>Hotline: 012 345 6789</li>
-                    </ul>
-                    <ul class="list_icon">
-                        <li>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-google-plus-g"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-skype"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-youtube-square"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="widget2">
-                <div class="widget2_infor">
-                    <div class="widget2_title">
-                        <h2>THÔNG ĐIỆP</h2>
-                    </div>
-                    <div class="widget2_content" style="box-sizing: border-box;">
-                        <p>Đến với khách sạn First Hotel tại biển Hải Hòa bạn chỉ phải chi phí mức thấp nhất mà lại được phục vụ ở mức cao nhất. Chúng tôi trân trọng sự quan tâm và phản hồi nếu quý khách không hài lòng.
-                            Bởi thông điệp của chúng tôi là "Phục vụ khách ngày hôm nay tốt hơn ngày hôm qua và ngày mai sẽ tốt hơn ngày hôm nay"</p>
-                    </div>
-                </div>
-                <div class="widget2_fb">
-                    <div class="widget2_title">
-                        <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
-                    </div>
-                    <div class="widget2_content" style="border-right: none;">
-                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="footer_container">
+        <div class="widget1">
+          <div class="widget_title">
+            <h2>FIRST HOTEL</h2>
+          </div>
+          <div class="widget_content">
+            <ul>
+              <li>
+                <i
+                  class="fas fa-map-marker-alt"
+                  style="color: #c5a46d; margin-right: 10px"
+                ></i
+                >Kim Sơn, Gia Lâm, Hà Nội
+              </li>
+              <li>
+                <i
+                  class="fas fa-phone-alt fas-lag"
+                  style="color: #c5a46d; margin-right: 10px"
+                ></i
+                >012 345 6789
+              </li>
+              <span class="cach"></span>
+              <li>
+                <i
+                  class="far fa-envelope"
+                  style="color: #c5a46d; margin-right: 10px"
+                ></i
+                >info@webhotel.vn
+              </li>
+              <li>Hotline: 012 345 6789</li>
+            </ul>
+            <ul class="list_icon">
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-skype"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-youtube-square"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="ft_footer">
-            Copyright © FIRST HOTEL. All Rights Reserved
+        <div class="widget2">
+          <div class="widget2_infor">
+            <div class="widget2_title">
+              <h2>THÔNG ĐIỆP</h2>
+            </div>
+            <div class="widget2_content" style="box-sizing: border-box">
+              <p>
+                Đến với khách sạn First Hotel tại biển Hải Hòa bạn chỉ phải chi
+                phí mức thấp nhất mà lại được phục vụ ở mức cao nhất. Chúng tôi
+                trân trọng sự quan tâm và phản hồi nếu quý khách không hài lòng.
+                Bởi thông điệp của chúng tôi là "Phục vụ khách ngày hôm nay tốt
+                hơn ngày hôm qua và ngày mai sẽ tốt hơn ngày hôm nay"
+              </p>
+            </div>
+          </div>
+          <div class="widget2_fb">
+            <div class="widget2_title">
+              <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+            </div>
+            <div class="widget2_content" style="border-right: none">
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/facebook"
+                data-tabs=""
+                data-width=""
+                data-height=""
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="false"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/facebook"
+                  class="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/facebook">Facebook</a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="ft_footer">Copyright © FIRST HOTEL. All Rights Reserved</div>
     </div>
     <div class="scrolltop" onclick="topFunction()">
-        <i class="fas fa-angle-double-up"></i>
+      <i class="fas fa-angle-double-up"></i>
     </div>
     <div class="phone">
-        <i class="fas fa-phone-volume" style="transform: rotate(-40deg);"></i><a class="a-hot" href="tel: 0242 242 0777" title="Gọi 0242 242 0777"> 0242 242 0777</a>
+      <i class="fas fa-phone-volume" style="transform: rotate(-40deg)"></i
+      ><a class="a-hot" href="tel: 0242 242 0777" title="Gọi 0242 242 0777">
+        0242 242 0777</a
+      >
     </div>
     <div class="overlay_form" onclick="myFunction(event)">
-        <form class="form_dp">
-            <h3>Đặt phòng</h3>
-            <ul>
-                <li>
-                    <p>Họ tên</p><input type="text" placeholder="Họ tên">
-                </li>
-                <li>
-                    <p>Số điện thoại</p><input type="number" placeholder="Số điện thoại">
-                </li>
-                <li>
-                    <p>Tên phòng và số lượng muốn đặt</p>
-                    <textarea name="" id="" placeholder="Tên phòng và số lượng muốn đặt"></textarea>
-                </li>
-            </ul>
-            <center><button type="submit" class="btn">Gửi</button></center>
-        </form>
+      <form class="form_dp">
+        <h3>Đặt phòng</h3>
+        <ul>
+          <li>
+            <p>Họ tên</p>
+            <input type="text" placeholder="Họ tên" />
+          </li>
+          <li>
+            <p>Số điện thoại</p>
+            <input type="number" placeholder="Số điện thoại" />
+          </li>
+          <li>
+            <p>Tên phòng và số lượng muốn đặt</p>
+            <textarea
+              name=""
+              id=""
+              placeholder="Tên phòng và số lượng muốn đặt"
+            ></textarea>
+          </li>
+        </ul>
+        <center><button type="submit" class="btn">Gửi</button></center>
+      </form>
     </div>
     <div class="abc"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.js "></script>
     <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop()) {
-                    $('.baner_menu').removeClass('absolute');
-                    $('.baner_menu').addClass('sticky');
-                } else {
-                    $('.baner_menu').removeClass('sticky');
-                    $('.baner_menu').addClass('absolute');
-                }
-                var dem = 0;
-                $('.room_boxes').each(function() {
-                    var bottom_of_object = $(this).offset().top;
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-                    if (bottom_of_window > bottom_of_object) {
-                        if (dem === 0) {
-                            $(this).css('animation', 'slow_food_left 1s ease-in-out forwards');
-                            dem++;
-                        } else if (dem == 1) {
-                            $(this).css('animation', 'slow_food_right 1s ease-in-out forwards');
-                            dem = 0;
-                        }
-                    }
-                });
-            });
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $(".baner_menu").removeClass("absolute");
+            $(".baner_menu").addClass("sticky");
+          } else {
+            $(".baner_menu").removeClass("sticky");
+            $(".baner_menu").addClass("absolute");
+          }
+          var dem = 0;
+          $(".room_boxes").each(function () {
+            var bottom_of_object = $(this).offset().top;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+              if (dem === 0) {
+                $(this).css(
+                  "animation",
+                  "slow_food_left 1s ease-in-out forwards"
+                );
+                dem++;
+              } else if (dem == 1) {
+                $(this).css(
+                  "animation",
+                  "slow_food_right 1s ease-in-out forwards"
+                );
+                dem = 0;
+              }
+            }
+          });
         });
+      });
 
-        function select_galley(n) {
-            var a = document.getElementsByClassName("a");
-            for (let i = 0; i < a.length; i++) {
-                a[i].classList.remove('ckeck');
-            }
-            let array = ["*", "phong", "amthuc", "sanh"];
-            a[n].classList.add('ckeck');
+      let ischeck = 0;
 
-            if (array[n] != "*") {
-                for (var i = 1; i < array.length; i++) {
-                    if (i === n) {
-                        $(".img_box-iterm[data-img=" + array[i] + "]").css({
-                            display: "block",
-                            animation: "img_on 0.5s ease-in-out forwards"
-                        })
-                    } else {
-                        $(".img_box-iterm[data-img=" + array[i] + "]").hide(5);
-                    }
+      function select_galley(n) {
+        var a = document.getElementsByClassName("a");
+        for (let i = 0; i < a.length; i++) {
+          a[i].classList.remove("ckeck");
+        }
+        let array = ["all", "phong", "amthuc", "sanh"];
+        a[n].classList.add("ckeck");
+        if (array[n] !== "all") {
+          if (n !== ischeck) {
+            if (n === 1 && ischeck === 0) {
+              for (var i = 1; i < array.length; i++) {
+                if (i !== n) {
+                  $(".img_box-iterm[data-img=" + array[i] + "]")
+                    .removeClass("img-on")
+                    .addClass("img-out")
+                    .hide();
                 }
+              }
             } else {
-                $(".img_box-iterm").css({
-                    display: "block",
-                    animation: "img_on 0.5s linear forwards"
-                })
+              for (var i = 1; i < array.length; i++) {
+                if (i !== n) {
+                  $(".img_box-iterm[data-img=" + array[i] + "]")
+                    .removeClass("img-on")
+                    .addClass("img-out");
+                }
+              }
+              setTimeout(() => {
+                $(".img_box-iterm").hide();
+                $(".img_box-iterm[data-img=" + array[n] + "]").show();
+                $(".img_box-iterm[data-img=" + array[n] + "]")
+                  .removeClass("img-out")
+                  .addClass("img-on");
+              }, 1000);
             }
-
-            const kt = document.getElementsByClassName('header_gallery')
-            if (kt) {
-                var select_list = document.getElementsByClassName('select_list')[0];
-                select_list.classList.remove('select_list_in');
-                select_list.classList.add('select_list_out');
-            }
+          }
+        } else {
+          $(".img_box-iterm").show();
+          $(".img_box-iterm").removeClass("img-out").addClass("img-on");
         }
+        ischeck = n;
 
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+        const kt = document.getElementsByClassName("header_gallery");
+        if (kt) {
+          var select_list = document.getElementsByClassName("select_list")[0];
+          select_list.classList.remove("select_list_in");
+          select_list.classList.add("select_list_out");
         }
+      }
 
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-        function img_views(n) {
-            document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-            var src = document.getElementsByClassName('iterm_img')[n].attributes[0].nodeValue;
-            var title = document.getElementsByClassName("img_box-iterm")[n].attributes[1].nodeValue;
-            if (title == 'phong') {
-                title = "Ảnh phòng";
-            } else if (title == 'amthuc') {
-                title = "Ẩm thực";
-            } else {
-                title = 'Sảnh';
-            }
-            stt = n;
-            document.getElementsByClassName('abc')[0].innerHTML = ' <div class="img_show" onclick="myFunction(event)"><div class="img_show-slide"><div class="slide_title"><div class="slide_tile-nav"><div class="title_img">' + title + '</div><div class="title_counter">' + (n + 1) + ' of 20</div></div><div class="icon_close"><i class="fas fa-times fa-2x" onclick="close_img()"></i></div></div><img src="' + src + '" alt="none"></div><div class="img_show-next"><i class="fas fa-arrow-circle-right fa-3x" onclick="next_img(' + stt + ')"></i></div><div class="img_show-pre"><i class="fas fa-arrow-circle-left fa-3x" onclick="pre_img(' + stt + ')"></i></div></div>';
+      function img_views(n) {
+        document.getElementsByTagName("body")[0].style.overflow = "hidden";
+        var src =
+          document.getElementsByClassName("iterm_img")[n].attributes[0]
+            .nodeValue;
+        var title =
+          document.getElementsByClassName("img_box-iterm")[n].attributes[1]
+            .nodeValue;
+        if (title == "phong") {
+          title = "Ảnh phòng";
+        } else if (title == "amthuc") {
+          title = "Ẩm thực";
+        } else {
+          title = "Sảnh";
         }
+        stt = n;
+        document.getElementsByClassName("abc")[0].innerHTML =
+          ' <div class="img_show" onclick="myFunction(event)"><div class="img_show-slide"><div class="slide_title"><div class="slide_tile-nav"><div class="title_img">' +
+          title +
+          '</div><div class="title_counter">' +
+          (n + 1) +
+          ' of 20</div></div><div class="icon_close"><i class="fas fa-times fa-2x" onclick="close_img()"></i></div></div><img src="' +
+          src +
+          '" alt="none"></div><div class="img_show-next"><i class="fas fa-arrow-circle-right fa-3x" onclick="next_img(' +
+          stt +
+          ')"></i></div><div class="img_show-pre"><i class="fas fa-arrow-circle-left fa-3x" onclick="pre_img(' +
+          stt +
+          ')"></i></div></div>';
+      }
 
-        function next_img(stt) {
-            var n = stt + 1;
-            if (n > 19) {
-                n = 0;
-            }
-            var src = document.getElementsByClassName('iterm_img')[n].attributes[0].nodeValue;
-            var title = document.getElementsByClassName("img_box-iterm")[n].attributes[1].nodeValue;
-            if (title == 'phong') {
-                title = "Ảnh phòng";
-            } else if (title == 'amthuc') {
-                title = "Ẩm thực";
-            } else {
-                title = 'Sảnh';
-            }
-            stt = n;
-
-            document.getElementsByClassName('abc')[0].innerHTML = '<div class="img_show" onclick="myFunction(event)"><div class="img_show-slide"><div class="slide_title"><div class="slide_tile-nav"><div class="title_img">' + title + '</div><div class="title_counter">' + (n + 1) + ' of 20</div></div><div class="icon_close"><i class="fas fa-times fa-2x" onclick="close_img()"></i></div></div><img src="' + src + '" alt="none"></div><div class="img_show-next"><i class="fas fa-arrow-circle-right fa-3x" onclick="next_img(' + stt + ')"></i></div><div class="img_show-pre"><i class="fas fa-arrow-circle-left fa-3x" onclick="pre_img(' + stt + ')"></i></div></div>';
+      function next_img(stt) {
+        var n = stt + 1;
+        if (n > 19) {
+          n = 0;
         }
-
-        function pre_img(stt) {
-            var n = stt - 1;
-            if (n < 0) {
-                n = 19;
-            }
-            var src = document.getElementsByClassName('iterm_img')[n].attributes[0].nodeValue;
-            var title = document.getElementsByClassName("img_box-iterm")[n].attributes[1].nodeValue;
-            if (title == 'phong') {
-                title = "Ảnh phòng";
-            } else if (title == 'amthuc') {
-                title = "Ẩm thực";
-            } else {
-                title = 'Sảnh';
-            }
-            console.log(stt);
-            stt = n;
-            console.log(stt);
-            document.getElementsByClassName('abc')[0].innerHTML = '<div class="img_show" onclick="myFunction(event)"><div class="img_show-slide"><div class="slide_title"><div class="slide_tile-nav"><div class="title_img">' + title + '</div><div class="title_counter">' + (n + 1) + ' of 20</div></div><div class="icon_close"><i class="fas fa-times fa-2x" onclick="close_img()"></i></div></div><img src="' + src + '" alt="none"></div><div class="img_show-next"><i class="fas fa-arrow-circle-right fa-3x" onclick="next_img(' + stt + ')"></i></div><div class="img_show-pre"><i class="fas fa-arrow-circle-left fa-3x" onclick="pre_img(' + stt + ')"></i></div></div>';
+        var src =
+          document.getElementsByClassName("iterm_img")[n].attributes[0]
+            .nodeValue;
+        var title =
+          document.getElementsByClassName("img_box-iterm")[n].attributes[1]
+            .nodeValue;
+        if (title == "phong") {
+          title = "Ảnh phòng";
+        } else if (title == "amthuc") {
+          title = "Ẩm thực";
+        } else {
+          title = "Sảnh";
         }
+        stt = n;
 
-        function close_img() {
-            document.getElementsByClassName('img_show')[0].style.display = 'none';
-            document.getElementsByTagName('body')[0].style.overflow = 'auto';
-        }
+        document.getElementsByClassName("abc")[0].innerHTML =
+          '<div class="img_show" onclick="myFunction(event)"><div class="img_show-slide"><div class="slide_title"><div class="slide_tile-nav"><div class="title_img">' +
+          title +
+          '</div><div class="title_counter">' +
+          (n + 1) +
+          ' of 20</div></div><div class="icon_close"><i class="fas fa-times fa-2x" onclick="close_img()"></i></div></div><img src="' +
+          src +
+          '" alt="none"></div><div class="img_show-next"><i class="fas fa-arrow-circle-right fa-3x" onclick="next_img(' +
+          stt +
+          ')"></i></div><div class="img_show-pre"><i class="fas fa-arrow-circle-left fa-3x" onclick="pre_img(' +
+          stt +
+          ')"></i></div></div>';
+      }
 
-        function menu_gallery() {
-            var a = document.getElementsByClassName('select_list')[0];
-            var b = a.attributes[0].nodeValue;
-            const words = b.split(' ');
-            if (words[1] == "select_list_in") {
-                a.classList.remove('select_list_in');
-                a.classList.add('select_list_out');
-            } else {
-                a.classList.remove('select_list_out');
-                a.classList.add('select_list_in');
-            }
+      function pre_img(stt) {
+        var n = stt - 1;
+        if (n < 0) {
+          n = 19;
         }
+        var src =
+          document.getElementsByClassName("iterm_img")[n].attributes[0]
+            .nodeValue;
+        var title =
+          document.getElementsByClassName("img_box-iterm")[n].attributes[1]
+            .nodeValue;
+        if (title == "phong") {
+          title = "Ảnh phòng";
+        } else if (title == "amthuc") {
+          title = "Ẩm thực";
+        } else {
+          title = "Sảnh";
+        }
+        console.log(stt);
+        stt = n;
+        console.log(stt);
+        document.getElementsByClassName("abc")[0].innerHTML =
+          '<div class="img_show" onclick="myFunction(event)"><div class="img_show-slide"><div class="slide_title"><div class="slide_tile-nav"><div class="title_img">' +
+          title +
+          '</div><div class="title_counter">' +
+          (n + 1) +
+          ' of 20</div></div><div class="icon_close"><i class="fas fa-times fa-2x" onclick="close_img()"></i></div></div><img src="' +
+          src +
+          '" alt="none"></div><div class="img_show-next"><i class="fas fa-arrow-circle-right fa-3x" onclick="next_img(' +
+          stt +
+          ')"></i></div><div class="img_show-pre"><i class="fas fa-arrow-circle-left fa-3x" onclick="pre_img(' +
+          stt +
+          ')"></i></div></div>';
+      }
+
+      function close_img() {
+        document.getElementsByClassName("img_show")[0].style.display = "none";
+        document.getElementsByTagName("body")[0].style.overflow = "auto";
+      }
+
+      function menu_gallery() {
+        // var a = document.getElementsByClassName("select_list")[0];
+        // var b = a.attributes[0].nodeValue;
+        // const words = b.split(" ");
+        // if (words[1] == "select_list_in") {
+        //   a.classList.remove("select_list_in");
+        //   a.classList.add("select_list_out");
+        // } else {
+        //   a.classList.remove("select_list_out");
+        //   a.classList.add("select_list_in");
+        // }
+      }
     </script>
     <script src="./js/silde.js "></script>
     <script src="./js/menu_rp.js "></script>
-
-</body>
-
+  </body>
 </html>
